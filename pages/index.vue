@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Title text="Feed" />
+    <Title text="Very long feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeed" :newLabel="true"/>
   </div>
 </template>
 

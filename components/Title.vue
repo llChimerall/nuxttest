@@ -1,17 +1,18 @@
 <template>
-    <h2 class="title">{{ text }}</h2>
+    <h2 class="title">{{ text }} 
+      <sup v-if="newLabel">newLabel</sup>
+    </h2>
 </template>
 
 <script>
 	export default {
-		props: ['text']
+		props: ['text', 'newLabel']
 	}
 </script>
 
 <style scoped>
   .title {
    color: white;
-   font-size: 1em;
   }
 
   .title:after {
