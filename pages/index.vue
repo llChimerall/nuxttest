@@ -1,12 +1,17 @@
 <template>
-  <section class="container">
-    <div>
-      <h1>Hello</h1>
-    </div>
-  </section>
+  <div class="container">
+    <Title text="Feed" />
+  </div>
 </template>
 
 <script>
+import Title from '~/components/Title.vue';
+
+export default {
+  components: {
+    Title
+  }
+}
 
 </script>
 
