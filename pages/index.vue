@@ -2,17 +2,23 @@
   <div class="container">
     <Title text="Feed" />
     <Title text="Very long feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeed" :newLabel="true"/>
+    <Button text="Register" />
   </div>
+
+
 </template>
 
 <script>
 import Title from '~/components/Title.vue';
+import Button from '~/components/Button.vue';
 
 export default {
   components: {
-    Title
+    Title,
+    Button
   }
 }
+
 
 </script>
 

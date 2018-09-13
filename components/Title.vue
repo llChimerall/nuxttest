@@ -1,6 +1,6 @@
 <template>
     <h2 class="title">{{ text }} 
-      <sup v-if="newLabel">newLabel</sup>
+      <sup v-if="newLabel">new</sup>
     </h2>
 </template>
 
