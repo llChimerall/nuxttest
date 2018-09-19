@@ -1,5 +1,5 @@
 <template>
-    <li class="feeditem" {{ before }}>
+    <li class="feeditem">
       {{ before }}
       <a class="player" v-if="link1" :href="link1.href">
         {{ link1.text }}
