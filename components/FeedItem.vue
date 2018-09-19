@@ -1,12 +1,12 @@
 <template>
     <li class="feeditem" {{ before }}>
       {{ before }}
-      <a class="player" v-if="link1" href="http://localhost:3000/index1">
-        Bone_Crusher24
+      <a class="player" v-if="link1" :href="link1.href">
+        {{ link1.text }}
       </a>
       {{ action }}
-      <a class="name_action" v-if="link2" href="http://localhost:3000/index1">
-        CS:Go League
+      <a class="name_action" v-if="link2" :href="link2.href">
+        {{ link2.text }}
       </a>
       <time class="time">
         1m ago

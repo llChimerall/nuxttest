@@ -9,6 +9,9 @@
         v-for="(item, index) in feedItems"
         :key="index"
         :before="item.before"
+        :link1='item.link1'
+        :action='item.action'
+        :link2='item.link2'
       />
     </ul>
   </div>
