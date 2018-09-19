@@ -3,6 +3,7 @@
     <Title text="Feed" />
     <Title text="Very long feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeed" :newLabel="true"/>
     <Button text="Register" />
+    <FeedItem/>
   </div>
 
 
@@ -11,9 +12,11 @@
 <script>
 import Title from '~/components/Title.vue';
 import Button from '~/components/Button.vue';
+import FeedItem from '~/components/FeedItem.vue';
 
 export default {
   components: {
+    FeedItem,
     Title,
     Button
   }
