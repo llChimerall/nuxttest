@@ -1,17 +1,16 @@
 <template>
-    <li>
-    <p class="player">
-      New player Bone_Crusher24
-    </p>
-    <p class="action">
-    join
-    </p>
-    <p class="name_action">
-    CS:Go League
-    </p>
-    <p class="time">
-    1m ago
-    </p>
+    <li class="feeditem">
+      New player
+      <a class="player" href="http://localhost:3000/index1">
+        Bone_Crusher24
+      </a>
+      join
+      <a class="name_action" href="http://localhost:3000/index1">
+        CS:Go League
+      </a>
+      <time class="time">
+        1m ago
+      </time>
     </li>
 </template>
 
@@ -23,5 +22,25 @@
 </script>
 
 <style scoped>
- 
+  .name_action {
+    text-decoration: none;
+    color: #bb6cd9;
+    font-weight: bold;
+  }
+  .player {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;    
+  }
+  .time {
+    color: #4f4f4f;
+    font-size: 0.5em;     
+  }
+  .feeditem {
+    display: table-row;
+  }
+  .time {
+    display: table-cell;
+    vertical-align: bottom;
+  }
 </style>
