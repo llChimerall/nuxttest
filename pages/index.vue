@@ -4,11 +4,13 @@
     <Title text="Very long feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeed" :newLabel="true"/>
     <Button text="Register" />
 
-    <FeedItem
-      v-for="(item, index) in feedItems"
-      :key="index"
-      :before="item.before"
-    />
+    <ul>
+      <FeedItem
+        v-for="(item, index) in feedItems"
+        :key="index"
+        :before="item.before"
+      />
+    </ul>
   </div>
 
 
@@ -27,6 +29,16 @@ const CSGO = {
 const Crusher = {
   text: 'Bone_Crusher24',
   href: 'http://yandex.ru'
+};
+
+const Seriy_Gom4 = {
+  text: 'Seriy_Gom4',
+  href: 'http://ya.ru'
+};
+
+const Sashka_34 = {
+  text: 'Sashka_34',
+  href: 'http://google.ru'
 };
 
 export default {
@@ -69,7 +81,17 @@ export default {
           },
           action: 'join',
           link2: CSGO
-        }
+        }, {
+          before: 'New player',
+          link1: Seriy_Gom4,
+          action: 'join',
+          link2: CSGO
+        }, {
+          before: 'New player',
+          link1: Sashka_34,
+          action: 'join',
+          link2: CSGO
+        },
       ]
     }
   }
