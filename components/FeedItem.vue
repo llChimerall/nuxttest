@@ -1,11 +1,11 @@
 <template>
-    <li class="feeditem">
-      New player
-      <a class="player" href="http://localhost:3000/index1">
+    <li class="feeditem" {{ before }}>
+      {{ before }}
+      <a class="player" v-if="link1" href="http://localhost:3000/index1">
         Bone_Crusher24
       </a>
-      join
-      <a class="name_action" href="http://localhost:3000/index1">
+      {{ action }}
+      <a class="name_action" v-if="link2" href="http://localhost:3000/index1">
         CS:Go League
       </a>
       <time class="time">
@@ -17,7 +17,7 @@
 
 <script>
 	export default {
-		props: ['text']
+		props: ['before', 'link1', 'action', 'link2']
 	}
 </script>
 
@@ -34,13 +34,15 @@
   }
   .time {
     color: #4f4f4f;
-    font-size: 0.5em;     
+    font-size: 0.5em;
+    font-weight: bold; 
+    display: table-cell;
+    vertical-align: bottom;
+    width: 20%;
   }
   .feeditem {
     display: table-row;
-  }
-  .time {
-    display: table-cell;
-    vertical-align: bottom;
+    color: white;
+    width: 80%;
   }
 </style>
