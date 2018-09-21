@@ -30,11 +30,11 @@
   .player {
     text-decoration: none;
     color: white;
-    font-weight: bold;    
+    font-weight: bold;
   }
   .time {
     color: #4f4f4f;
-    font-size: 0.5em;
+    font-size: 0.7em;
     font-weight: bold; 
     display: table-cell;
     vertical-align: bottom;
@@ -44,5 +44,10 @@
     display: table-row;
     color: white;
     width: 80%;
+    border-bottom: 2px solid white;
+    list-style: none;
+    margin: 0;
+  }
+  .player, .name_action {
   }
 </style>

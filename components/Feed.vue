@@ -98,3 +98,11 @@
     }
   }
 </script>
+
+<style scoped>
+  .feed-items {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+  }
+</style>

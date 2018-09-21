@@ -1,19 +1,29 @@
 <template>
-  <div class="container">
-    <div class="feed-wrapper">
-      <Feed />
+    <div class="container">
+      <div class="header-wrapper">
+        <Header />
+      </div>
+      <div class="join-wrapper">
+        <Join />
+      </div>
+      <div class="feed-wrapper">
+        <Feed />
+      </div>
     </div>
-  </div>
 
 
 </template>
 
 <script>
 import Feed from '~/components/Feed.vue';
+import Join from '~/components/Join.vue';
+import Header from '~/components/Header.vue';
 
 export default {
   components: {
-    Feed
+    Feed, 
+    Join,
+    Header
   }
 }
 
