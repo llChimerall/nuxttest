@@ -46,8 +46,5 @@
     width: 80%;
     border-bottom: 2px solid white;
     list-style: none;
-    margin: 0;
-  }
-  .player, .name_action {
   }
 </style>

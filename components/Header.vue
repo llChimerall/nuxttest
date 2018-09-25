@@ -1,23 +1,29 @@
 <template>
   <div class='header'>
     <a class='logo' href="#">ScoutUp</a>
-    <div class='menu'>
-      <a href="#">Home</a>
-      <a href="#">Teams</a>
-      <a href="#">Players</a>
-      <a href="#">Tournaments</a>
-    </div>
+    <ul class='navigation'>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Teams</a></li>
+      <li><a href="#">Players</a></li>
+      <li><a href="#">Tournaments</a></li>
+    </ul>
     <div class='login'>
       <a href="#">Sign In</a>
     </div>
     <div class='button'>
-      <a href="#">Register</a>
+      <Button /> 
     </div>
   </div>
 </template>
 
 <script>
+import Button from '~/components/Button.vue';
 
+export default {
+  components: {
+    Button
+  }
+}
 </script>
 
 <style scoped>
@@ -27,16 +33,22 @@ a {
   text-decoration: none;
   color: white;
 }
-.menu a:hover {
+.navigation a:hover {
   color: white;
 }
-.header, .menu, .login, .button, .logo {
+.header, .navigation, .login, .button, .logo {
   display: inline-block;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   font-size: 13px;
   font-family: 'Muli', sans-serif;
+}
+.navigation {
+  vertical-align: middle
+}
+.navigation li {
+  display: inline;
 }
 .header {
   height: 50px;
@@ -45,10 +57,13 @@ a {
   font-size: 20px;
   color: white;
 }
+.login {
+  
+}
 .login a {
   color: #c758f2;
 }
-.menu a {
+.navigation a {
   color: #8a8a8a;
   margin: 0px 20px 0px 20px;
 }

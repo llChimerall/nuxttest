@@ -1,17 +1,23 @@
 <template>
   <div class='join'>
-      <span class="bigtitle">
+      <h1 class="bigtitle">
         Choose on the tournament with the team of a dream!
-      </span>
-      <span class="smiletitle">
+      </h1>
+      <p class="smiletitle">
         Tournaments, teams, players search - all in a single platform!
-      </span>
-      <a class="button" href="http://localhost:3000/index1">Join</a>
+      </p>
+      <Button />
   </div>
 </template>
 
 <script>
+import Button from '~/components/Button.vue';
 
+export default {
+  components: {
+    Button
+  }
+}
 </script>
 
 <style scoped>
