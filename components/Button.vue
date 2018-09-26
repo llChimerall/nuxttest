@@ -1,10 +1,10 @@
 <template>
-    <a class="button" href="http://localhost:3000/index1">{{ text }}</a>
+    <a class="button" :class="{'m-big': big}" href="http://localhost:3000/index1">{{ text }}</a>
 </template>
 
 <script>
 	export default {
-		props: ['text',]
+		props: ['text', 'big']
 	}
 </script>
 
@@ -25,5 +25,9 @@
     background: -webkit-linear-gradient(left, #9a51e0 0%,#c857f1 100%);
     background: linear-gradient(to right, #9a51e0 0%,#c857f1 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a51e0', endColorstr='#c857f1',GradientType=1 );
+  }
+
+  .m-big {
+    font-size: 65px;
   }
 </style>

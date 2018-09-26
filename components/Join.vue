@@ -6,7 +6,7 @@
       <p class="smiletitle">
         Tournaments, teams, players search - all in a single platform!
       </p>
-      <Button text="Join" />
+      <Button text="Join" :big="true" />
   </div>
 </template>
 
