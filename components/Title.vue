@@ -17,7 +17,7 @@
 
   .title:after {
     margin-top: 15px;
-    max-width: 265px;
+    max-width: 300px;
     display: block;
     content: '';
     height: 7px;

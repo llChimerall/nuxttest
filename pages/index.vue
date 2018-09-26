@@ -36,7 +36,7 @@ export default {
 
 .feed-wrapper {
   width: 33%;
-  margin-left: 66%;
+  margin-left: 67%;
 }
 
 

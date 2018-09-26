@@ -104,5 +104,6 @@
     display: table;
     width: 100%;
     border-collapse: collapse;
+    max-width: 300px;
   }
 </style>
