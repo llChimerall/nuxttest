@@ -45,15 +45,15 @@ a {
   font-family: 'Muli', sans-serif;
 }
 .navigation {
-  vertical-align: middle
+  vertical-align: middle;
 }
 .navigation li {
   display: inline;
 }
 .header {
+  display: block;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 75px;
   max-width: 1680px;
   margin: 0 auto;
 }
