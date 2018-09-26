@@ -6,7 +6,7 @@
       <p class="smiletitle">
         Tournaments, teams, players search - all in a single platform!
       </p>
-      <Button />
+      <Button text="Join" />
   </div>
 </template>
 
@@ -44,7 +44,7 @@ export default {
   margin-top: 10px;
   font-size: 20px;
 }
-.button {
+.butto {
     margin-top: 40px;
     display: inline-block;
     text-decoration: none;

@@ -1,13 +1,15 @@
 <template>
-    <li class="feeditem">
-      {{ before }}
-      <a class="player" v-if="link1" :href="link1.href">
-        {{ link1.text }}
-      </a>
-      {{ action }}
-      <a class="name_action" v-if="link2" :href="link2.href">
-        {{ link2.text }}
-      </a>
+      <li class="feeditem">
+      <p class="feedcell">
+        {{ before }}
+        <a class="player" v-if="link1" :href="link1.href">
+          {{ link1.text }}
+        </a>
+        {{ action }}
+        <a class="name_action" v-if="link2" :href="link2.href">
+          {{ link2.text }}
+        </a>
+      </p>
       <time class="time">
         1m ago
       </time>
@@ -39,12 +41,18 @@
     display: table-cell;
     vertical-align: bottom;
     width: 20%;
+    padding-bottom: 20px;
   }
   .feeditem {
     display: table-row;
     color: white;
     width: 80%;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid grey;
     list-style: none;
+  }
+  .feedcell {
+    display: table-cell;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 </style>

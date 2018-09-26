@@ -11,7 +11,7 @@
       <a href="#">Sign In</a>
     </div>
     <div class='button'>
-      <Button /> 
+      <Button text="Register" />
     </div>
   </div>
 </template>
@@ -51,7 +51,11 @@ a {
   display: inline;
 }
 .header {
-  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 75px;
+  max-width: 1680px;
+  margin: 0 auto;
 }
 .logo {
   font-size: 20px;
@@ -67,7 +71,7 @@ a {
   color: #8a8a8a;
   margin: 0px 20px 0px 20px;
 }
-.button {
+.butto {
     padding: 8px 35px 8px 35px ;
     font-weight: bold;
     text-align: center;
