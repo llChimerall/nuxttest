@@ -1,17 +1,25 @@
 <template>
   <div class='header'>
-    <a class='logo' href="#">ScoutUp</a>
-    <ul class='navigation'>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Teams</a></li>
-      <li><a href="#">Players</a></li>
-      <li><a href="#">Tournaments</a></li>
-    </ul>
-    <div class='login'>
-      <a href="#">Sign In</a>
-    </div>
-    <div class='button'>
-      <Button text="Register" />
+    <div class='flex'>
+      <div class='flexitem'><a class='logo' href="#">ScoutUp</a></div>
+      <div class='flexitem'>
+      <ul class='navigation'>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Players</a></li>
+        <li><a href="#">Tournaments</a></li>
+      </ul>
+      </div>
+      <div class='flexitem'>
+      <div class='login'>
+        <a href="#">Sign In</a>
+      </div>
+      </div>
+      <div class='flexitem'>
+      <div class='button'>
+        <Button text="Register" />
+      </div>
+      </div>
     </div>
   </div>
 </template>
@@ -54,7 +62,7 @@ a {
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
-  max-width: 1680px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 .logo {
@@ -83,5 +91,9 @@ a {
     background: -webkit-linear-gradient(left, #9a51e0 0%,#c857f1 100%);
     background: linear-gradient(to right, #9a51e0 0%,#c857f1 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a51e0', endColorstr='#c857f1',GradientType=1 );
+  }
+  .flex {
+    display: box;
+    display: flex;
   }
 </style>

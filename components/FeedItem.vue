@@ -42,7 +42,7 @@
     font-weight: bold; 
     display: table-cell;
     vertical-align: bottom;
-    width: 20%;
+    width: 15%;
     padding-bottom: 20px;
   }
   .feeditem {
@@ -51,10 +51,11 @@
     width: 80%;
     border-bottom: 1px solid grey;
     list-style: none;
+    line-height: 2em;
   }
   .feedcell2 {
     display: table-cell;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
   }
 </style>

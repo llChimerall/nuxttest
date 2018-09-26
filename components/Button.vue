@@ -19,7 +19,7 @@
     text-align: center;
     vertical-align: middle;
     border: 0px solid #691eaf;
-    border-radius: 15px;
+    border-radius: 25px;
     background: #9a51e0;
     background: -moz-linear-gradient(left, #9a51e0 0%, #c857f1 100%);
     background: -webkit-linear-gradient(left, #9a51e0 0%,#c857f1 100%);
@@ -28,6 +28,8 @@
   }
 
   .m-big {
-    font-size: 65px;
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 10px 60px 10px 60px;
   }
 </style>
