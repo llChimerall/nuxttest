@@ -3,11 +3,11 @@
     <header class="feed-title">
       <Title text="Choose your game" />
     </header>
-      <ul>
+      <ul class='choice'>
+        <li><Bsignup text="Sign up" :blur="true" /></li>
         <li><Bsignup text="Sign up" /></li>
-        <li><Bsignup text="Sign up" /></li>
-        <li><Bsignup text="Sign up" /></li>
-        <li><Bsignup text="Sign up" /></li>
+        <li><Bsignup text="Sign up" :blur="true" /></li>
+        <li><Bsignup text="Sign up" :blur="true" /></li>
       </ul>
     
 
@@ -33,4 +33,9 @@ import Bsignup from '~/components/Bsignup.vue';
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Muli');
 
+
+.choice li {
+  display: inline-block;
+  vertical-align: top;
+}
 </style>

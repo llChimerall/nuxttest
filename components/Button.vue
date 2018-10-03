@@ -35,10 +35,10 @@
 
   .m-gray {
     font-size: 12px;
-    padding: 8px 42px 8px 42px;
+    padding: 8px 40px 8px 40px;
     color: white;
-    border: 2px solid white;
-    border-radius: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
     background: rgba(160,160,160,.75);
   }
 </style>
