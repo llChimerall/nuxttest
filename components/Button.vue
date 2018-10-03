@@ -1,10 +1,10 @@
 <template>
-    <a class="button" :class="{'m-big': big}" href="http://localhost:3000/index1">{{ text }}</a>
+    <a class="button" :class="{'m-big': big, 'm-gray': gray}" href="http://localhost:3000/index1">{{ text }}</a>
 </template>
 
 <script>
 	export default {
-		props: ['text', 'big']
+		props: ['text', 'big', 'm-gray']
 	}
 </script>
 
@@ -31,5 +31,14 @@
     font-size: 20px;
     margin-top: 40px;
     padding: 10px 60px 10px 60px;
+  }
+
+  .m-gray {
+    font-size: 12px;
+    padding: 8px 42px 8px 42px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: rgba(160,160,160,.75);
   }
 </style>

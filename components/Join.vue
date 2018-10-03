@@ -4,7 +4,7 @@
         Choose on the tournament with the team of a dream!
       </h1>
       <p class="smiletitle">
-        Tournaments, teams, players search - all in a single platform!
+        Tournaments, teams, players search — all in a single platform!
       </p>
       <Button text="Join" :big="true" />
   </div>

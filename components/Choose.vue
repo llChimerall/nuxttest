@@ -3,12 +3,30 @@
     <header class="feed-title">
       <Title text="Choose your game" />
     </header>
-    <div class="back">
+      <ul class='back'>
+        <li><a class="more" href="#">Read more</a>
+            <div class='button'>
+            <Button text="Sign up" :m-gray="true" />
+            </div></li>
+        <li><a class="more" href="#">Read more</a>
+            <div class='button'>
+            <Button text="Sign up" :m-gray="true" />
+            </div></li>
+        <li><a class="more" href="#">Read more</a>
+            <div class='button'>
+            <Button text="Sign up" :m-gray="true" />
+            </div></li>
+        <li><a class="more" href="#">Read more</a>
+            <div class='button'>
+            <Button text="Sign up" :m-gray="true" />
+            </div></li>
+      </ul>
+
       <a class="more" href="#">Read more</a>
       <div class="morebutton">
       <a class="button" href="http://localhost:3000/index1">Sign up</a>
       </div>
-    </div>
+    
 
   </section>
 </template>
@@ -17,11 +35,13 @@
 <script>
 import Title from '~/components/Title.vue';
 import FeedItem from '~/components/FeedItem.vue';
+import Button from '~/components/Button.vue';
 
  export default {
     components: {
       Title,
-      FeedItem
+      FeedItem,
+      Button
     }
  }
 
@@ -46,7 +66,7 @@ import FeedItem from '~/components/FeedItem.vue';
   background-position: center;
 }
 
-.button {
+.utton {
   font-size: 12px;
   display: inline-block;
   text-decoration: none;
@@ -58,7 +78,7 @@ import FeedItem from '~/components/FeedItem.vue';
   border-radius: 20px;
   background: rgba(160,160,160,.75);
 }
-.morebutton {
+.buttonmore {
   text-align: center;
   margin-top: 185px;
 }

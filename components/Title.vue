@@ -13,10 +13,11 @@
 <style scoped>
   .title {
    color: white;
+   font-size: 20px;
   }
 
   .title:after {
-    margin-top: 15px;
+    margin-top: 8px;
     max-width: 300px;
     display: block;
     content: '';

@@ -68,7 +68,8 @@ a {
 }
 .navigation a {
   color: #8a8a8a;
-  margin: 0px 20px 0px 20px;
+  margin: 0px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
 }
   .inline1, .inline2, .inline3, .inline4 {
     display: inline-block;
