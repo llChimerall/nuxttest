@@ -3,7 +3,7 @@
     <header class="feed-title">
       <Title text="Choose your game" />
     </header>
-      <ul class='back'>
+      <ul>
         <li><Bsignup text="Sign up" /></li>
         <li><Bsignup text="Sign up" /></li>
         <li><Bsignup text="Sign up" /></li>
@@ -33,11 +33,4 @@ import Bsignup from '~/components/Bsignup.vue';
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Muli');
 
-.back {
-  margin-top: 30px;
-  background-image: url(https://image.ibb.co/hRg6Bp/image.jpg);
-  height: 270px;
-  width: 220px;
-  background-position: center;
-}
 </style>
