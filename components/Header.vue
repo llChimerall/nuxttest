@@ -1,26 +1,18 @@
 <template>
   <div class='header'>
-    <div class='flex'>
-      <div class='flexitem'><a class='logo' href="#">ScoutUp</a></div>
-      <div class='flexitem'>
-      <ul class='navigation'>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Players</a></li>
-        <li><a href="#">Tournaments</a></li>
-      </ul>
-      </div>
-      <div class='flexitem'>
-      <div class='login'>
-        <a href="#">Sign In</a>
-      </div>
-      </div>
-      <div class='flexitem'>
-      <div class='button'>
-        <Button text="Register" />
-      </div>
-      </div>
+    <div class='inline1'><a class='logo' href="#">ScoutUp</a></div>
+    <div class='inline2'><ul class='navigation'>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Teams</a></li>
+      <li><a href="#">Players</a></li>
+      <li><a href="#">Tournaments</a></li>
+    </ul></div>
+    <div class='inline3'><div class='login'>
+      <a href="#">Sign In</a>
     </div>
+    <div class='button'>
+      <Button text="Register" />
+    </div></div>
   </div>
 </template>
 
@@ -47,7 +39,6 @@ a {
 .header, .navigation, .login, .button, .logo {
   display: inline-block;
   text-transform: uppercase;
-  text-align: center;
   vertical-align: middle;
   font-size: 13px;
   font-family: 'Muli', sans-serif;
@@ -79,21 +70,20 @@ a {
   color: #8a8a8a;
   margin: 0px 20px 0px 20px;
 }
-.butto {
-    padding: 8px 35px 8px 35px ;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    border: 0px solid #691eaf;
-    border-radius: 20px;
-    background: #9a51e0;
-    background: -moz-linear-gradient(left, #9a51e0 0%, #c857f1 100%);
-    background: -webkit-linear-gradient(left, #9a51e0 0%,#c857f1 100%);
-    background: linear-gradient(to right, #9a51e0 0%,#c857f1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a51e0', endColorstr='#c857f1',GradientType=1 );
+  .inline1, .inline2, .inline3, .inline4 {
+    display: inline-block;
   }
-  .flex {
-    display: box;
-    display: flex;
+  .inline1 {
+    width: 10%;
+  }
+  .inline2 {
+    width: 72%;
+    text-align: center;
+  }
+  .inline3 {
+    width: 18%;
+  }
+  .button {
+    margin-left: 10px;
   }
 </style>

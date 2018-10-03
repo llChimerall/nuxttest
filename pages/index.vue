@@ -6,6 +6,9 @@
       <div class="join-wrapper">
         <Join />
       </div>
+      <div class="choose-wrapper">
+        <Choose />
+      </div>
       <div class="feed-wrapper">
         <Feed />
       </div>
@@ -18,12 +21,14 @@
 import Feed from '~/components/Feed.vue';
 import Join from '~/components/Join.vue';
 import Header from '~/components/Header.vue';
+import Choose from '~/components/Choose.vue';
 
 export default {
   components: {
     Feed, 
     Join,
-    Header
+    Header,
+    Choose
   }
 }
 
