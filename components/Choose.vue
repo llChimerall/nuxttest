@@ -6,19 +6,19 @@
       <ul class='back'>
         <li><a class="more" href="#">Read more</a>
             <div class='button'>
-            <Button text="Sign up" :m-gray="true" />
+            <Button text="Sign up" :gray="true" />
             </div></li>
         <li><a class="more" href="#">Read more</a>
             <div class='button'>
-            <Button text="Sign up" :m-gray="true" />
+            <Button text="Sign up" :gray="true" />
             </div></li>
         <li><a class="more" href="#">Read more</a>
             <div class='button'>
-            <Button text="Sign up" :m-gray="true" />
+            <Button text="Sign up" :gray="true" />
             </div></li>
         <li><a class="more" href="#">Read more</a>
             <div class='button'>
-            <Button text="Sign up" :m-gray="true" />
+            <Button text="Sign up" :gray="true" />
             </div></li>
       </ul>
 

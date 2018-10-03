@@ -4,7 +4,7 @@
 
 <script>
 	export default {
-		props: ['text', 'big', 'm-gray']
+		props: ['text', 'big', 'gray']
 	}
 </script>
 
