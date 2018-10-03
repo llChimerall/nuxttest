@@ -1,7 +1,11 @@
 <template>
-  <div class='back' :class="{'m-blur': blur}">
-  <div class="more"><a href="#">Read more</a></div>
-  <div class="bchoose"><Button text="Sign up" :gray="true" /></div>
+  <div
+    class='back'
+    :class="{'m-blur': blur}"
+    :style="{'background-image': `url(${background})`}"
+  >
+    <div class="more"><a href="#">Read more</a></div>
+    <div class="bchoose"><Button text="Sign up" :gray="true" /></div>
   </div>
 </template>
 
@@ -10,7 +14,7 @@
 import Button from '~/components/Button.vue';
 
  export default {
-    props: ['blur'],
+    props: ['blur', 'background'],
     components: {
       Button
     }
@@ -33,7 +37,6 @@ import Button from '~/components/Button.vue';
 }
 .back {
   margin-top: 30px;
-  background-image: url(https://image.ibb.co/hRg6Bp/image.jpg);
   height: 270px;
   width: 220px;
   background-position: center;

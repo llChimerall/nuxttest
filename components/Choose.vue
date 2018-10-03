@@ -5,7 +5,7 @@
     </header>
       <ul class='choice'>
         <li><Bsignup text="Sign up" :blur="true" /></li>
-        <li><Bsignup text="Sign up" /></li>
+        <li><Bsignup text="Sign up" background="https://image.ibb.co/hRg6Bp/image.jpg" /></li>
         <li><Bsignup text="Sign up" :blur="true" /></li>
         <li><Bsignup text="Sign up" :blur="true" /></li>
       </ul>
