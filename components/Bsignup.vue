@@ -4,10 +4,6 @@
     :class="{'m-blur': blur}"
     :style="{'background-image': `url(${background})`}"
   >
-    <button class="pointerleft"></button>
-    <button class="pointerright"></button>
-
-
     <div class="gradient"></div>
     <div class="more"><a href="http://localhost:3000/index1">Read more</a></div>
     <div class="bchoose"><Button text="Sign up" :gray="true" /></div>
@@ -29,57 +25,6 @@ import Button from '~/components/Button.vue';
 
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Muli');
-
-.pointerleft, .pointerright {
-  width: 50px;
-  height: 50px;
-  border: 0;
-  position: absolute;
-  z-index: 1;
-  margin-top: 100px;
-  transform: scale(0.8);
-  transition: transform 0.3s;
-}
-
-.pointerleft {
-  background: url('https://image.ibb.co/fJ0q3e/l.png');
-  background-size: cover;
-  left: -60px;
-}
-
-.pointerright {
-  background: url('https://image.ibb.co/ib7sGz/r.png');
-  background-size: cover;
-  left: 230px;
-}
-
-.pointerleft:hover, .pointerright:hover {
-  transform: scale(1);
-}
-
-.pointerleft:focus, .pointerright:focus {
-  transform: scale(1);
-  filter: progid:DXImageTransform.Microsoft.Glow(color=#b464d5, strength=6);
-}
-
-.pointerleft:before, .pointerright:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  left: 0;
-  top: 0;
-  filter: blur(4px);
-}
-
-.pointerleft:before {
-  background-image: url('https://image.ibb.co/fJ0q3e/l.png');
-}
-
-.pointerright:before {
-  background-image: url('https://image.ibb.co/ib7sGz/r.png');
-}
 
 .more a {
   color: white;
