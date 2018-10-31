@@ -6,8 +6,8 @@
   >
     <button class="pointerleft"></button>
     <button class="pointerright"></button>
-    
-    
+
+
     <div class="gradient"></div>
     <div class="more"><a href="http://localhost:3000/index1">Read more</a></div>
     <div class="bchoose"><Button text="Sign up" :gray="true" /></div>
@@ -34,7 +34,7 @@ import Button from '~/components/Button.vue';
   width: 50px;
   height: 50px;
   border: 0;
-  position: absolute;  
+  position: absolute;
   z-index: 1;
   margin-top: 100px;
   transform: scale(0.8);
@@ -62,7 +62,24 @@ import Button from '~/components/Button.vue';
   filter: progid:DXImageTransform.Microsoft.Glow(color=#b464d5, strength=6);
 }
 
+.pointerleft:before, .pointerright:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  filter: blur(4px);
+}
 
+.pointerleft:before {
+  background-image: url('https://image.ibb.co/fJ0q3e/l.png');
+}
+
+.pointerright:before {
+  background-image: url('https://image.ibb.co/ib7sGz/r.png');
+}
 
 .more a {
   color: white;
@@ -81,7 +98,7 @@ import Button from '~/components/Button.vue';
   background-position: center;
   border-radius: 10px;
   border: 0px solid #691eaf;
-  background-size: cover;  
+  background-size: cover;
 }
 
 .m-blur {
@@ -94,7 +111,7 @@ import Button from '~/components/Button.vue';
   transform: scale(1);
 }
 .m-blur .bchoose, .m-blur .more, .m-blur .gradient, .m-blur .pointerleft, .m-blur .pointerright {
-   display: none; 
+   display: none;
 }
 
 .bchoose {
