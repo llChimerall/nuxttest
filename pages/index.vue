@@ -9,6 +9,29 @@
       <div class="choose-wrapper">
         <Choose />
       </div>
+      <div class="card-wrapper">
+        <div class="cards-layout">
+          <div class="cards-column">
+            <Card
+              background="/pics/epic.jpg"
+              blueGradient="true"
+              text='Take part in an epic battle'
+              class="card-main"
+             />
+          </div>
+          <div class="cards-column">
+           <Card
+             background="/pics/epic.jpg"
+             text='League of Legends Big Tournament'
+             class="aux-card"
+            />
+            <Card
+              background="/pics/epic.jpg"
+              text='League of Legends Big Tournament'
+             />
+          </div>
+          </div>
+      </div>
       <div class="feed-wrapper">
         <Feed />
       </div>
@@ -22,13 +45,15 @@ import Feed from '~/components/Feed.vue';
 import Join from '~/components/Join.vue';
 import Header from '~/components/Header.vue';
 import Choose from '~/components/Choose.vue';
+import Card from '~/components/Card.vue';
 
 export default {
   components: {
-    Feed, 
+    Feed,
     Join,
     Header,
-    Choose
+    Choose,
+    Card
   }
 }
 
@@ -44,6 +69,20 @@ export default {
   margin-left: 67%;
 }
 
+.cards-layout {
+  display: flex;
+}
+
+.card-main {
+  height: 100%;
+}
+
+.cards-column {
+ padding: 10px;
+}
+
+.aux-card {
+ margin-bottom: 20px;
+}
 
 </style>
-
