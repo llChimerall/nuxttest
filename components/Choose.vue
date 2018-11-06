@@ -5,25 +5,75 @@
     </header>
       <ul class="choice">
         <li class="inlinechoice">
+        <button
+          class="pointerleft"
+          v-if="current === 0"
+          @click="prev"
+        ></button>
+        <button
+          class="pointerright"
+          v-if="current === 0"
+          @click="next"
+          >
+        </button>
           <div class="content">
-            <Bsignup :blur="true" background="https://f4.bcbits.com/img/a0165407436_16.jpg"/>
+            <Bsignup
+            :blur="current !== 0"
+            background="https://f4.bcbits.com/img/a0165407436_16.jpg"/>
           </div>
         </li>
         <li class="inlinechoice">
-        <button class="pointerleft"></button>
-        <button class="pointerright"></button>
+        <button
+          class="pointerleft"
+            v-if="current === 1"
+              @click="prev"
+        ></button>
+        <button
+          class="pointerright"
+            v-if="current === 1"
+              @click="next"
+        >
+        </button>
         <div class="content">
-              <Bsignup background="https://image.ibb.co/hRg6Bp/image.jpg" />
+              <Bsignup
+              :blur="current !== 1"
+               background="https://image.ibb.co/hRg6Bp/image.jpg" />
         </div>
         </li>
         <li class="inlinechoice">
+        <button
+          class="pointerleft"
+            v-if="current === 2"
+              @click="prev"
+        ></button>
+        <button
+          class="pointerright"
+          v-if="current === 2"
+            @click="next"
+        >
+        </button>
           <div class="content">
-            <Bsignup :blur="true" background="https://static.gamespot.com/uploads/scale_medium/536/5360430/3064592-square+league+of+legends+box+art.jpg"/>
+            <Bsignup
+            :blur="current !== 2"
+            background="https://static.gamespot.com/uploads/scale_medium/536/5360430/3064592-square+league+of+legends+box+art.jpg"/>
           </div>
         </li>
         <li class="inlinechoice">
+        <button
+          class="pointerleft"
+            v-if="current === 3"
+              @click="prev"
+        ></button>
+        <button
+          class="pointerright"
+          v-if="current === 3"
+            @click="next"
+          >
+        </button>
           <div class="content">
-            <Bsignup :blur="true" background="https://haste.net/wp-content/uploads/2017/11/Haste-Dota2-Cover.jpg"/>
+            <Bsignup
+            :blur="current !== 3"
+            background="https://haste.net/wp-content/uploads/2017/11/Haste-Dota2-Cover.jpg"/>
           </div>
         </li>
       </ul>
@@ -42,6 +92,30 @@ import Bsignup from '~/components/Bsignup.vue';
       Title,
       Button,
       Bsignup
+    },
+
+    data() {
+      return {
+        current: 1
+      };
+    },
+
+    methods: {
+      next() {
+        this.current = this.current + 1;
+
+        if (this.current > 3) {
+          this.current = 0;
+        }
+      },
+
+      prev() {
+        this.current = this.current - 1;
+
+        if (this.current < 0) {
+          this.current = 3;
+        }
+      }
     }
  }
 
@@ -75,6 +149,7 @@ import Bsignup from '~/components/Bsignup.vue';
   margin-top: 100px;
   transform: scale(0.8);
   transition: transform 0.3s;
+  outline: none;
 }
 
 .pointerleft {

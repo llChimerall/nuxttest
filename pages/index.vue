@@ -10,6 +10,7 @@
         <Choose />
       </div>
       <div class="card-wrapper">
+        <Title text="Last updates" />
         <div class="cards-layout">
           <div class="cards-column">
             <Card
@@ -30,10 +31,10 @@
               text='League of Legends Big Tournament'
              />
           </div>
-          </div>
-      </div>
-      <div class="feed-wrapper">
-        <Feed />
+        </div>
+        <div class="feed-column">
+          <Feed />
+        </div>
       </div>
     </div>
 
@@ -46,6 +47,7 @@ import Join from '~/components/Join.vue';
 import Header from '~/components/Header.vue';
 import Choose from '~/components/Choose.vue';
 import Card from '~/components/Card.vue';
+import Title from '~/components/Title.vue';
 
 export default {
   components: {
@@ -53,7 +55,8 @@ export default {
     Join,
     Header,
     Choose,
-    Card
+    Card,
+    Title
   }
 }
 
@@ -69,7 +72,12 @@ export default {
   margin-left: 67%;
 }
 
+.card-wrapper {
+  display: flex;
+}
+
 .cards-layout {
+  width: 75%;
   display: flex;
 }
 
@@ -79,10 +87,16 @@ export default {
 
 .cards-column {
  padding: 10px;
+ width: 50%;
 }
 
 .aux-card {
  margin-bottom: 20px;
 }
+
+.feed-column {
+width: 25%;
+}
+
 
 </style>

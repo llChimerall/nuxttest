@@ -35,6 +35,10 @@ export default {
   font-size: 3em;
   font-weight: bold;
   position: relative;
+  transition: box-shadow 0.5s, transform 0.5s;
+  overflow: hidden;
+  outline: none;
+  transform-style: preserve-3d;
 }
 
 
@@ -63,5 +67,10 @@ export default {
 
 .text {
   position: relative;
+}
+
+.card:focus {
+  box-shadow: 0 0 30px rgba(255,0,0,1);
+      transform: rotateX(-45deg) rotateY(30deg);
 }
 </style>
