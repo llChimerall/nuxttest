@@ -61,7 +61,7 @@ a {
   color: white;
 }
 .login {
-  
+
 }
 .login a {
   color: #c758f2;
@@ -87,4 +87,12 @@ a {
   .button {
     margin-left: 10px;
   }
+
+/*
+@media (min-width: 1000px) {
+  .inline3 {
+    width: 50%;
+  }
+}
+*/
 </style>

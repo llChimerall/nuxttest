@@ -4,16 +4,28 @@
       <Title text="Choose your game" />
     </header>
       <ul class="choice">
-        <li class="inlinechoice1"><Bsignup :blur="true" background="https://f4.bcbits.com/img/a0165407436_16.jpg"/></li>
-        <li class="inlinechoice2">
+        <li class="inlinechoice">
+          <div class="content">
+            <Bsignup :blur="true" background="https://f4.bcbits.com/img/a0165407436_16.jpg"/>
+          </div>
+        </li>
+        <li class="inlinechoice">
         <button class="pointerleft"></button>
         <button class="pointerright"></button>
         <div class="content">
               <Bsignup background="https://image.ibb.co/hRg6Bp/image.jpg" />
         </div>
         </li>
-        <li class="inlinechoice3"><Bsignup :blur="true" background="https://static.gamespot.com/uploads/scale_medium/536/5360430/3064592-square+league+of+legends+box+art.jpg"/></li>
-        <li class="inlinechoice4"><Bsignup :blur="true" background="https://haste.net/wp-content/uploads/2017/11/Haste-Dota2-Cover.jpg"/></li>
+        <li class="inlinechoice">
+          <div class="content">
+            <Bsignup :blur="true" background="https://static.gamespot.com/uploads/scale_medium/536/5360430/3064592-square+league+of+legends+box+art.jpg"/>
+          </div>
+        </li>
+        <li class="inlinechoice">
+          <div class="content">
+            <Bsignup :blur="true" background="https://haste.net/wp-content/uploads/2017/11/Haste-Dota2-Cover.jpg"/>
+          </div>
+        </li>
       </ul>
 
   </section>
@@ -48,7 +60,7 @@ import Bsignup from '~/components/Bsignup.vue';
   position: relative;
 
 }
-.inlinechoice1, .inlinechoice2, .inlinechoice3, .inlinechoice4 {
+.inlinechoice {
   display: inline-block;
   width: 25%;
 
