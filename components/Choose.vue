@@ -19,7 +19,7 @@
           <div class="content">
             <Bsignup
             :blur="current !== 0"
-            background="https://f4.bcbits.com/img/a0165407436_16.jpg"/>
+            background="/pics/g1.jpg"/>
           </div>
         </li>
         <li class="inlinechoice">
@@ -37,7 +37,7 @@
         <div class="content">
               <Bsignup
               :blur="current !== 1"
-               background="https://image.ibb.co/hRg6Bp/image.jpg" />
+               background="/pics/g2.jpg" />
         </div>
         </li>
         <li class="inlinechoice">
@@ -55,7 +55,7 @@
           <div class="content">
             <Bsignup
             :blur="current !== 2"
-            background="https://static.gamespot.com/uploads/scale_medium/536/5360430/3064592-square+league+of+legends+box+art.jpg"/>
+            background="/pics/g3.jpg"/>
           </div>
         </li>
         <li class="inlinechoice">
@@ -73,7 +73,7 @@
           <div class="content">
             <Bsignup
             :blur="current !== 3"
-            background="https://haste.net/wp-content/uploads/2017/11/Haste-Dota2-Cover.jpg"/>
+            background="/pics/g4.jpg"/>
           </div>
         </li>
       </ul>

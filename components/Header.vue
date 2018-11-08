@@ -7,12 +7,14 @@
       <li><a href="#">Players</a></li>
       <li><a href="#">Tournaments</a></li>
     </ul></div>
-    <div class='inline3'><div class='login'>
-      <a href="#">Sign In</a>
+    <div class='inline3'>
+      <div class='login'>
+        <a href="#">Sign In</a>
+      </div>
+      <div class='button'>
+        <Button text="Register" />
+      </div>
     </div>
-    <div class='button'>
-      <Button text="Register" />
-    </div></div>
   </div>
 </template>
 
@@ -61,8 +63,10 @@ a {
   color: white;
 }
 .login {
-
+  margin-right: 20px;
+  align: center;
 }
+
 .login a {
   color: #c758f2;
 }
@@ -85,7 +89,6 @@ a {
     width: 18%;
   }
   .button {
-    margin-left: 10px;
   }
 
 /*

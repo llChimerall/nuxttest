@@ -9,32 +9,34 @@
       <div class="choose-wrapper">
         <Choose />
       </div>
-      <div class="card-wrapper">
+      <div class="card">
         <Title text="Last updates" />
-        <div class="cards-layout">
-          <div class="cards-column">
-            <Card
-              background="/pics/epic.jpg"
-              blueGradient="true"
-              text='Take part in an epic battle'
-              class="card-main"
-             />
-          </div>
-          <div class="cards-column">
-           <Card
-             background="/pics/epic.jpg"
-             text='League of Legends Big Tournament'
-             class="aux-card"
-            />
+        <div class="card-wrapper">
+          <div class="cards-layout">
+            <div class="cards-column">
+              <Card
+                background="/pics/epic.jpg"
+                blueGradient="true"
+                text='Take part in an epic battle'
+                class="card-main"
+              />
+            </div>
+            <div class="cards-column">
             <Card
               background="/pics/epic.jpg"
               text='League of Legends Big Tournament'
-             />
+              class="aux-card"
+              />
+              <Card
+                background="/pics/epic.jpg"
+                text='League of Legends Big Tournament'
+              />
+            </div>
           </div>
-        </div>
-        <div class="feed-column">
-          <Feed />
-        </div>
+          <div class="feed-column">
+            <Feed />
+          </div>
+      </div>  
       </div>
     </div>
 

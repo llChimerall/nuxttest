@@ -24,7 +24,7 @@ export default {
   @import url('https://fonts.googleapis.com/css?family=Oswald:400,600');
 
 .join {
-  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2015/02/20/626689/61f9c4f1d69fb7adb0f55b39c94f93d9-1000.jpg);
+  background-image: url('/pics/back.jpg');
   background-size: cover;
   padding: 150px 0px 100px 75px;
 }
