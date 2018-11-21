@@ -10,7 +10,7 @@
         </ol>
         <a href="">
           Лучшее из&nbsp;лучшего: что на&nbsp;самом деле стоит покупать у&nbsp;Byredo, Vichy
-        </a>
+        </a><span>🐱</span>
       </li>
       <li>
         <img alt="" src="/pics/501.jpeg" />
@@ -20,7 +20,7 @@
         </ol>
         <a href="">
           9&nbsp;новых ювелирных марок из&nbsp;России
-        </a>
+        </a><span>🐱</span>
       </li>
       <li>
         <img alt="" src="/pics/502.jpeg" />
@@ -31,7 +31,7 @@
           <strong>Красивые вещи</strong> для&nbsp;дома
           <br />
           Подушки с&nbsp;яркими узорами
-        </a>
+        </a><span>🐱</span>
       </li>
       <li>
         <img alt="" src="/pics/503.jpeg" />
@@ -41,7 +41,7 @@
         </ol>
         <a href="">
           Разбор коллекции сумок от&nbsp;ведущих сумкосоздателей
-        </a>
+        </a><span>🐱</span>
       </li>
 
     </ul>
@@ -135,6 +135,14 @@ a:after {
 a:focus:after {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
+}
+
+a + span {
+  display: none;
+}
+
+a:hover + span, a:focus + span {
+  display: inline;
 }
 
 ol li:nth-child(2), a strong {
