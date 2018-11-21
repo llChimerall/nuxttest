@@ -132,6 +132,10 @@ a:after {
   border-radius: 5px;
 }
 
+a:active {
+  color: green;
+}
+
 a:focus:after {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
@@ -183,8 +187,8 @@ ol li:nth-child(2) {
     outline: 1px dotted orange;
   }
 
-  a:after {
-    display: none;
+  a:focus:after {
+    box-shadow: none;
   }
 
 }
