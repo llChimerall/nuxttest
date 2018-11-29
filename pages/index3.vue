@@ -143,6 +143,7 @@ a:focus:after {
 
 a + span {
   display: none;
+  position: absolute;
 }
 
 a:hover + span, a:focus + span {
