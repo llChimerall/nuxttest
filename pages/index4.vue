@@ -1,46 +1,51 @@
 <template>
   <section class="background">
     <div class="container">
-      <div class="content">
-        <header class="head">
-          <p>Спикер школы бизнеса Синергия</p>
-          <h1 id="about">Котейка Котёночкин</h1>
-        </header>
-        <div class="shareblock">
-          <figure>
-            <img class="foto" alt="фото спикера" src="/pics/502.jpeg" />
-            <figcaption>спикер</figcaption>
-          </figure>
-          <aside>
-            <h4>Поделиться:</h4>
-            <ul class="buttons">
-              <li><button><i class="fab fa-vk"></i></button></li>
-              <li><button><i class="fab fa-twitter"></i></button></li>
-              <li><button><i class="fab fa-facebook-f"></i></button></li>
-              <li><button><i class="fab fa-google-plus-g"></i></button></li>
-            </ul>
-          </aside>
+        <div class="content">
+            <header class="head">
+              <p>Спикер школы бизнеса Синергия</p>
+              <h1 id="about">Котейка Котёночкин</h1>
+            </header>
+            <div class="shareblock">
+              <figure>
+                <img class="foto" alt="фото спикера" src="/pics/502.jpeg" />
+                <figcaption>спикер</figcaption>
+              </figure>
+              <aside>
+                <h4>Поделиться:</h4>
+                <ul class="buttons">
+                  <li><button><i class="fab fa-vk"></i></button></li>
+                  <li><button><i class="fab fa-twitter"></i></button></li>
+                  <li><button><i class="fab fa-facebook-f"></i></button></li>
+                  <li><button><i class="fab fa-google-plus-g"></i></button></li>
+                </ul>
+              </aside>
+            </div>
+            <p class="description">Являясь одиночным охотником на&nbsp;грызунов и&nbsp;других мелких животных,
+            кошка&nbsp;&mdash; социальное животное, использующее для общения широкий диапазон звуковых сигналов,
+            а&nbsp;также феромоны и&nbsp;движения тела</p>
+            <footer>
+              <ul class="links">
+                <li><a href="#about">о спикере</a></li>
+                <li><a href="#events">события</a></li>
+                <li><a href="#materials">материалы</a></li>
+              </ul>
+            </footer>
         </div>
-        <p class="description">Являясь одиночным охотником на&nbsp;грызунов и&nbsp;других мелких животных,
-        кошка&nbsp;&mdash; социальное животное, использующее для общения широкий диапазон звуковых сигналов,
-        а&nbsp;также феромоны и&nbsp;движения тела</p>
-        <footer>
-          <ul class="links">
-            <li><a href="#about">о спикере</a></li>
-            <li><a href="#events">события</a></li>
-            <li><a href="#materials">материалы</a></li>
-          </ul>
-        </footer>
-      </div>
     </div>
   </section>
 </template>
 
 <style>
 .background {
-  background-color: black;
+  background-color: #1e1c34;
   color: white;
-  padding: 30px 15px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: url(/static/pics/sinergia.jpg) 50% 100% no-repeat;
+  box-shadow: inset 0 0 1px 100000px rgba(30,28,52,0.95);
+  background-size: contain;
+  
 }
 
 .head p {
@@ -54,6 +59,7 @@
 .container {
   max-width: 800px;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .content {
@@ -110,15 +116,20 @@ figcaption {
   padding: 0;
 }
 
+.buttons {
+  margin-left: -10px;
+}
+
 .buttons button {
   color: gold;
   background: none;
   border: none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .links a {
   padding: 15px;
-  border: 1px solid black;
   display: inline-block;
   text-decoration: none;
   color: gold;
@@ -137,4 +148,50 @@ footer {
   margin-top: 15px;
 }
 
+a:hover, a:focus, button:hover, button:focus {
+  color: grey;
+}
+
+@media screen and (max-width: 520px) {
+
+.background {
+  background: none;
+}
+
+.content {
+  width: 100%;
+}
+
+.shareblock {
+  position: static;
+  width: 100%;
+  background-color: inherit;
+  padding: 0px;
+  box-shadow: none;
+}
+
+.buttons, h4 {
+  display: inline-block;
+}
+
+.buttons {
+  margin-left: 0px;
+}
+
+figure {
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.foto {
+  position: static;
+  transform: none;
+}
+
+.description {
+  padding-top: 0;
+  width: 100%;
+}
+}
 </style>
