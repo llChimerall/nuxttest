@@ -1,6 +1,6 @@
 <template>
     <form action="/index4" method="get">
-      <a href="/index4" target="_blank" >Спикер</a><br />
+      <a href="/index4" rel="noopener nofollow" target="_blank" >Спикер</a><br />
       <input name="search" type="text" value="Test" /><br />
       <input name="pass" type="password" value="Test" /><br />
       <textarea name="bigText" disabled>Какой-то текст</textarea>
@@ -24,7 +24,7 @@
       </select>
       <br />
       <label>
-        <input type="checkbox" name="checkbox" /> Галочка поставлена
+        <input type="checkbox" name="checkbox" checked/> Галочка поставлена
       </label><br />
       <label>
         <input type="radio" name="radio" value="1" > Выбран первый пункт
@@ -76,6 +76,10 @@
     border: 1px solid gray;
     border-radius: 3px;
   },
+
+  [type=checkbox]:checked {
+    display: none;
+  }
 
   input[type=text]:focus,
   input[type=password]:focus,
