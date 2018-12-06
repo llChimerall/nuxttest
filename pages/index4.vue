@@ -42,10 +42,20 @@
   color: white;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+}
+
+.background:before {
+  content: '';
   background: url(/static/pics/sinergia.jpg) 50% 100% no-repeat;
   box-shadow: inset 0 0 1px 100000px rgba(30,28,52,0.95);
   background-size: contain;
-  
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
 }
 
 .head p {
@@ -153,45 +163,44 @@ a:hover, a:focus, button:hover, button:focus {
 }
 
 @media screen and (max-width: 520px) {
+  .background:before {
+    background: none;
+  }
 
-.background {
-  background: none;
-}
+  .content {
+    width: auto;
+  }
 
-.content {
-  width: 100%;
-}
+  .shareblock {
+    position: static;
+    width: auto;
+    background-color: inherit;
+    padding: 0px;
+    box-shadow: none;
+  }
 
-.shareblock {
-  position: static;
-  width: 100%;
-  background-color: inherit;
-  padding: 0px;
-  box-shadow: none;
-}
+  .buttons, h4 {
+    display: inline-block;
+  }
 
-.buttons, h4 {
-  display: inline-block;
-}
+  .buttons {
+    margin-left: 0px;
+  }
 
-.buttons {
-  margin-left: 0px;
-}
+  figure {
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
 
-figure {
-  height: auto;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
+  .foto {
+    position: static;
+    transform: none;
+  }
 
-.foto {
-  position: static;
-  transform: none;
-}
-
-.description {
-  padding-top: 0;
-  width: 100%;
-}
+  .description {
+    padding-top: 0;
+    width: auto;
+  }
 }
 </style>
