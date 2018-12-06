@@ -1,5 +1,6 @@
 <template>
     <form action="/index4" method="get">
+      <a href="/index4" target="_blank" >Спикер</a><br />
       <input name="search" type="text" value="Test" /><br />
       <input name="pass" type="password" value="Test" /><br />
       <textarea name="bigText" disabled>Какой-то текст</textarea>
