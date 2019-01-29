@@ -35,6 +35,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+
+    postcss: [
+      require('postcss-nested')(),
+      require('postcss-simple-vars')(),
+    ]
   }
 }
