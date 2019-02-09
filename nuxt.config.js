@@ -40,6 +40,7 @@ module.exports = {
     postcss: [
       require('postcss-nested')(),
       require('postcss-simple-vars')(),
+      require('postcss-color-function')(),
     ]
   }
 }
