@@ -33,7 +33,7 @@ html, body, #__layout, #__nuxt {
     content: '';
     position: absolute;
     background-color: #217e80;
-    width: 50%;
+    width: 52.75%;
     height: 100%;
     right: 0;
     top: 0;
