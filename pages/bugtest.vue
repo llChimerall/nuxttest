@@ -6,13 +6,13 @@
         <Blogo />
         </div>
         <div class="search">
-        2
+        <Bsearch />
         </div>
         <div class="menu">
         3
         </div>
         <div class="cart">
-        4
+        <Bcart />
         </div>
       </div>
       <div class="main">
@@ -37,11 +37,15 @@
 
 <script>
 import Blogo from '~/components/Blogo.vue'
+import Bsearch from '~/components/Bsearch.vue'
+import Bcart from '~/components/Bcart.vue'
 
 	export default {
 		layout: 'bug',
     components: {
-      Blogo
+      Blogo,
+      Bsearch,
+      Bcart
     }
 	}
 </script>
@@ -66,6 +70,10 @@ import Blogo from '~/components/Blogo.vue'
 
 .header, .main, .footer {
   display: flex;
+}
+
+.header {
+  height: 128px;
 }
 
 .logo {
