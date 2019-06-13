@@ -3,27 +3,27 @@
     <div class="grid">
       <div class="header">
         <div class="logo">
-        <Blogo />
+          <Blogo />
         </div>
         <div class="search">
-        <Bsearch />
+          <Bsearch />
         </div>
         <div class="menu">
-        3
+          <Bmenu />
         </div>
         <div class="cart">
-        <Bcart />
+          <Bcart />
         </div>
       </div>
       <div class="main">
         <div class="describ">
-        ab
-          <div>
-          Test
+          <div class="classification">
+          classification
           </div>
+          <Bdescrib />
         </div>
         <div class="buy">
-        ac
+          <Blot />
         </div>
       </div>
       <div class="footer">
@@ -38,20 +38,30 @@
 <script>
 import Blogo from '~/components/Blogo.vue'
 import Bsearch from '~/components/Bsearch.vue'
+import Bmenu from '~/components/Bmenu.vue'
 import Bcart from '~/components/Bcart.vue'
+import Bdescrib from '~/components/Bdescrib.vue'
+import Blot from '~/components/Blot.vue'
 
 	export default {
 		layout: 'bug',
     components: {
       Blogo,
       Bsearch,
-      Bcart
+      Bmenu,
+      Bcart,
+      Bdescrib,
+      Blot
     }
 	}
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://code.iconify.design/1/1.0.2/iconify.min.js');
+
 .gridwrapper {
+  font-family: 'Montserrat', sans-serif;
   position: relative;
 
   &:before {
@@ -72,8 +82,13 @@ import Bcart from '~/components/Bcart.vue'
   display: flex;
 }
 
+.main {
+  padding-top: 70px;
+}
+
 .header {
   height: 128px;
+  font-size: 0.7em;
 }
 
 .logo {
@@ -94,6 +109,7 @@ import Bcart from '~/components/Bcart.vue'
 
 .describ {
   width: 47%;
+  position: relative;
 }
 
 .buy {
@@ -103,5 +119,16 @@ import Bcart from '~/components/Bcart.vue'
 .contact {
   width: 53%;
   margin-left: auto;
+}
+
+.classification {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 32%;
+  left: -5%;
+  color: #ffffff;
+  font-size: 3em;
+  text-shadow: #b3b3b3 1px 1px 0, #b3b3b3 -1px -1px 0, 
+  #b3b3b3 -1px 1px 0, #b3b3b3 1px -1px 0;
 }
 </style>

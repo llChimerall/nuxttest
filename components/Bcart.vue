@@ -11,14 +11,26 @@
 
 <style>
 .bcart {
-  border: 1px solid black;
+  text-align: center;
 }
 
 .bcarticon {
   border: 0px solid yellow;
-  border-radius: 200px;
-  padding: 10px 13px;
+  border-radius: 300px;
+  padding: 9px 12px;
   background: #ffffff;
+  position: relative;
+}
+
+.bcarticon:before {
+  content: '';
+  position: absolute;
+  border: 2px solid #ffffff;
+  border-radius: 200px;
+  padding: 5px 5px;
+  background: #ebb679;
+  right: 0;
+  top: 0;
 }
 
 .carticon {
