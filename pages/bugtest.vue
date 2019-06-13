@@ -12,7 +12,7 @@
           <Bmenu />
         </div>
         <div class="cart">
-          <Bcart />
+          <Bcart add="+" />
         </div>
       </div>
       <div class="main">
@@ -23,7 +23,14 @@
           <Bdescrib />
         </div>
         <div class="buy">
-          <Blot />
+          <Blot
+            v-if="currentBug"
+            v-bind="currentBug"
+           />
+          <button @click="bug = 0"><span v-if="bug === 0">now: </span>1</button>
+          <button @click="bug = 1"><span v-if="bug === 1">now: </span>2</button>
+          <button @click="bug = 2"><span v-if="bug === 2">now: </span>3</button>
+          <button @click="bug = 3"><span v-if="bug === 3">now: </span>4</button>
         </div>
       </div>
       <div class="footer">
@@ -52,7 +59,47 @@ import Blot from '~/components/Blot.vue'
       Bcart,
       Bdescrib,
       Blot
+    },
+  data: () => ({
+    bug: 0,
+      bugs: [{
+        name: 'Pachyteria eguestris',
+        pic: '/pics/bugsize.png',
+        sex: 'male',
+        locality: 'Malaysia',
+        price: '$5.99'
+      },
+      {
+        name: 'Pachyteria eguestris',
+        pic: '/pics/bugsize.png',
+        sex: 'female',
+        locality: 'Kongo',
+        price: '$4.56'
+      },
+      {
+        name: 'Pachyteria eguestris',
+        pic: '/pics/bugsize.png',
+        sex: 'female',
+        locality: 'Russia',
+        price: '$99.99'
+      },
+      {
+        name: 'Pachyteria eguestris',
+        pic: '/pics/bugsize.png',
+        sex: 'male',
+        locality: 'America',
+        price: '$1.00'
+      },
+      ]
+  }), 
+
+  computed: {
+    currentBug() {
+     // return this.bugs[0];
+
+      return this.bugs[this.bug];
     }
+  }
 	}
 </script>
 
@@ -87,7 +134,6 @@ import Blot from '~/components/Blot.vue'
 }
 
 .header {
-  height: 128px;
   font-size: 0.7em;
 }
 
@@ -105,6 +151,7 @@ import Blot from '~/components/Blot.vue'
 
 .cart {
   width: 9%;
+  padding-top: 26px;
 }
 
 .describ {

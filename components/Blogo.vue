@@ -1,6 +1,6 @@
 <template>
   <div class="blogo">
-    <a href="#"><img class="bpiclogo" src="/pics/blogo.png" alt="Логотип"></a>
+    <a class="logosrc" href="#"><img class="bpiclogo" src="/pics/blogo.png" alt="Логотип"></a>
   </div>
 </template>
 
@@ -8,11 +8,17 @@
 
 </script>
 
-<style>
+<style scoped>
 .blogo {
   background-color: #217e80;
   height: 100%;
   text-align: center;
+}
+
+.logosrc {
+  display: block;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .bpiclogo {

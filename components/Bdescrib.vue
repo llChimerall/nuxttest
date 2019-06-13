@@ -1,18 +1,12 @@
 <template>
   <div class="bdescrib">
     <ul class="uldescrib">
-      <li>Class:</li>
-      <p>Insecta</p>
-      <li>Order:</li>
-      <p>Coleoptera</p>
-      <li>Family:</li>
-      <p>Cerambycidae</p>
-      <li>Subfamily:</li>
-      <p>Cerambycinae</p>
-      <li>Tribe:</li>
-      <p>Callichromatini</p>
-      <li>Genus:</li>
-      <p>Pachyteria</p>
+      <li>Class:<span>Insecta</span></li>
+      <li>Order:<span>Coleoptera</span></li>
+      <li>Family:<span>Cerambycidae</span></li>
+      <li>Subfamily:<span>Cerambycinae</span></li>
+      <li>Tribe:<span>Callichromatini</span></li>
+      <li>Genus:<span>Pachyteria</span></li>
     </ul>
   </div>
 </template>
@@ -35,9 +29,11 @@
   font-weight: bold;
 }
 
-.uldescrib p {
+.uldescrib span {
   margin: 0;
   padding-top: 0.5em;
   padding-bottom: 1.5em;
+  display: block;
+  font-weight: normal;
 }
 </style>

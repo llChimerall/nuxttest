@@ -13,8 +13,12 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.5.0/css/brands.css'},
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css'}
+    ],
+    script: [
+      { src: 'https://code.iconify.design/1/1.0.2/iconify.min.js' }
     ]
   },
+
   /*
   ** Customize the progress bar color
   */

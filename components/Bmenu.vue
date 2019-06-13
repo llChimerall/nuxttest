@@ -12,13 +12,17 @@
 
 </script>
 
-<style>
+<style scoped>
+.bnavigation {
+  padding-top: 30px;
+}
+
 .navigation li {
   display: inline;
 }
 
 .navigation li a {
-  padding: 20px 50px;
+  padding: 35px 50px;
   margin-right: 10px;
   text-decoration: none;
   color: white;

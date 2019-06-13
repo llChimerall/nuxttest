@@ -10,11 +10,12 @@
 <script>
 </script>
 
-<style>
+<style scoped>
 .bsearch {
   background-color: #ffffff;
   height: 100%;
   text-align: center;
+  padding-top: 40px;
 }
 
 .binput {
