@@ -54,8 +54,8 @@ export default {
 }
 
 .carticon_small {
-  width: 1.1em;
-  height: 1.1em;
+  width: 1.5em;
+  height: 1.5em;
   fill: black;
 }
 </style>

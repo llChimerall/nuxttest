@@ -31,7 +31,7 @@ export default {
 .bcounter {
   border: 1px solid #fff;
   border-radius: 300px;
-  padding: 5px;
+  padding: 8px;
   display: inline-block;
   font-weight: bold;
 }

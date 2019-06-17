@@ -22,15 +22,40 @@
           </div>
           <Bdescrib />
         </div>
+        <div class="bugimage">
+          <img class="bugimagepic" src="/pics/Pachyteria_equestris.png">
+        </div>
         <div class="buy">
           <Blot
             v-if="currentBug"
             v-bind="currentBug"
            />
-          <button @click="bug = 0"><span v-if="bug === 0">now: </span>1</button>
-          <button @click="bug = 1"><span v-if="bug === 1">now: </span>2</button>
-          <button @click="bug = 2"><span v-if="bug === 2">now: </span>3</button>
-          <button @click="bug = 3"><span v-if="bug === 3">now: </span>4</button>
+          <div class="select">
+            <button @click="bug = 0" class="selectbutton">
+              <span v-if="bug === 0" class="thisselect">
+                <div class="thisselect"></div>
+              </span>
+                <div class="notthisselect"></div>
+            </button>
+            <button @click="bug = 1" class="selectbutton">
+              <span v-if="bug === 1" class="thisselect">
+                <div class="thisselect"></div>
+              </span>
+                <div class="notthisselect"></div>
+            </button>
+            <button @click="bug = 2" class="selectbutton">
+              <span v-if="bug === 2" class="thisselect">
+                <div class="thisselect"></div>
+              </span>
+                <div class="notthisselect"></div>
+            </button>
+            <button @click="bug = 3" class="selectbutton">
+              <span v-if="bug === 3" class="thisselect">
+                <div class="thisselect"></div>
+              </span>
+                <div class="notthisselect"></div>
+            </button>
+          </div>
         </div>
       </div>
       <div class="footer">
@@ -63,32 +88,32 @@ import Blot from '~/components/Blot.vue'
   data: () => ({
     bug: 0,
       bugs: [{
-        name: 'Pachyteria eguestris',
+        name: 'Pachyteria equestris',
         pic: '/pics/bugsize.png',
         sex: 'male',
         locality: 'Malaysia',
         price: '$5.99'
       },
       {
-        name: 'Pachyteria eguestris',
-        pic: '/pics/bugsize.png',
+        name: 'Pachyteria equestris',
+        pic: '/pics/bugsize4.png',
         sex: 'female',
-        locality: 'Kongo',
+        locality: 'India',
         price: '$4.56'
       },
       {
-        name: 'Pachyteria eguestris',
-        pic: '/pics/bugsize.png',
+        name: 'Pachyteria equestris',
+        pic: '/pics/bugsize2.png',
         sex: 'female',
-        locality: 'Russia',
-        price: '$99.99'
+        locality: 'Laos',
+        price: '$7.04'
       },
       {
-        name: 'Pachyteria eguestris',
-        pic: '/pics/bugsize.png',
+        name: 'Pachyteria equestris',
+        pic: '/pics/bugsize3.png',
         sex: 'male',
-        locality: 'America',
-        price: '$1.00'
+        locality: 'Vietnam',
+        price: '$3.73'
       },
       ]
   }), 
@@ -105,6 +130,7 @@ import Blot from '~/components/Blot.vue'
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap');
 @import url('https://code.iconify.design/1/1.0.2/iconify.min.js');
 
 .gridwrapper {
@@ -152,6 +178,7 @@ import Blot from '~/components/Blot.vue'
 .cart {
   width: 9%;
   padding-top: 26px;
+  text-align: center;
 }
 
 .describ {
@@ -161,6 +188,7 @@ import Blot from '~/components/Blot.vue'
 
 .buy {
   width: 53%;
+  position: relative;
 }
 
 .contact {
@@ -177,5 +205,45 @@ import Blot from '~/components/Blot.vue'
   font-size: 3em;
   text-shadow: #b3b3b3 1px 1px 0, #b3b3b3 -1px -1px 0, 
   #b3b3b3 -1px 1px 0, #b3b3b3 1px -1px 0;
+}
+
+.select {
+  position: absolute;
+  top: 90px;
+  right: 0;
+}
+
+.selectbutton {
+  border: none;
+  background: none;
+  display: block;
+  padding: 14px 30px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.thisselect {
+  height: 30px;
+  width: 2px;
+  border: none;
+  background: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.notthisselect {
+  height: 2px;
+  width: 2px;
+  background: #fff;
+}
+
+.bugimage {
+  margin-top: -30px;
+  margin-left: -123px;
+  margin-right: -128px;
+}
+
+.bugimagepic {
+  width: 250px;
 }
 </style>
