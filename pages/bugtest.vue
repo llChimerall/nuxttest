@@ -31,29 +31,17 @@
             v-bind="currentBug"
            />
           <div class="select">
-            <button @click="bug = 0" class="selectbutton">
-              <span v-if="bug === 0" class="thisselect">
-                <div class="thisselect"></div>
-              </span>
-                <div class="notthisselect"></div>
-            </button>
-            <button @click="bug = 1" class="selectbutton">
-              <span v-if="bug === 1" class="thisselect">
-                <div class="thisselect"></div>
-              </span>
-                <div class="notthisselect"></div>
-            </button>
-            <button @click="bug = 2" class="selectbutton">
-              <span v-if="bug === 2" class="thisselect">
-                <div class="thisselect"></div>
-              </span>
-                <div class="notthisselect"></div>
-            </button>
-            <button @click="bug = 3" class="selectbutton">
-              <span v-if="bug === 3" class="thisselect">
-                <div class="thisselect"></div>
-              </span>
-                <div class="notthisselect"></div>
+            <button
+              @click="bug = i"
+              @focus="bug = i"
+              v-for="i in [0,1,2,3]"
+              :key="i"
+              class="selectbug"
+              :class="{
+                selectthisbug: i === bug
+              }"
+              >
+                {{ i }}
             </button>
           </div>
         </div>
@@ -213,28 +201,41 @@ import Blot from '~/components/Blot.vue'
   right: 0;
 }
 
-.selectbutton {
+.selectbug {
   border: none;
   background: none;
   display: block;
-  padding: 14px 30px;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  -webkit-appearance: none;
+  padding: 20px;
+  text-indent: -999px;
+  overflow: hidden;
+  position: relative;
+  height: 0px;
+  width: 0px;
+  margin: 15px 0;
+
+  &:after {
+    height: 2px;
+    width: 2px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: height 0.5s;
+  }
+
+  &:focus {
+    outline: none; /* на фокусе меняется высота */
+  }
 }
 
-.thisselect {
-  height: 30px;
-  width: 2px;
-  border: none;
-  background: #fff;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+.selectthisbug {
 
-.notthisselect {
-  height: 2px;
-  width: 2px;
-  background: #fff;
+  &:after {
+    height: 30px;
+  }
 }
 
 .bugimage {
