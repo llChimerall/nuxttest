@@ -22,6 +22,7 @@ import Heading from '~/components/splitapp/Heading.vue'
 import Order from '~/components/splitapp/Order.vue'
 
 export default {
+  layout: 'split',
   components: {
     Heading,
     Order
@@ -29,25 +30,25 @@ export default {
 
   data: () => ({
     food: [{
-      picture: '/pics/502.jpeg',
+      picture: '/pics/food1.jpg',
       quantity: 1,
       name: 'Le Pigeon Burger',
       price: '$9.50'
     },
     {
-      picture: '/pics/502.jpeg',
-      quantity: 1,
-      name: 'Roasted potato Salad',
+      picture: '/pics/food2.jpg',
+      quantity: 999,
+      name: 'Roasted potato Salad Croissant Croissant Croissant Croissant Croissant',
       price: '$15.00'
     },
     {
-      picture: '/pics/502.jpeg',
-      quantity: 1,
+      picture: '/pics/food3.jpg',
+      quantity: 15,
       name: 'Croissant',
       price: '$7.50'
     },
     {
-      picture: '/pics/502.jpeg',
+      picture: '/pics/food4.jpg',
       quantity: 1,
       name: 'Hot cheese burito',
       price: '$8.00'
