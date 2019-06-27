@@ -38,7 +38,7 @@ export default {
     {
       picture: '/pics/food2.jpg',
       quantity: 999,
-      name: 'Roasted potato Salad Croissant Croissant Croissant Croissant Croissant',
+      name: 'Roasted potato Salad Croissant Croissant Croissan',
       price: '$15.00'
     },
     {

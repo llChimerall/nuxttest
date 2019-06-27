@@ -12,10 +12,10 @@
       <td class="quantity">
         {{ food.quantity }}
       </td>
-      <td>
+      <td class="name">
         {{ food.name }}
       </td>
-      <td>
+      <td class="price">
         {{ food.price }}
       </td>
       </tr>
@@ -32,23 +32,31 @@
 <style scoped>
 
 .picture {
-  height: 55px;
+  height: 50px;
   width: 80px;
   border-radius: 5%;
 }
 
 .quantity {
-  padding: 0 25px;
+  padding: 30px 25px 30px 15px;
   position: relative;
-  text-align: center;
+  text-align: right;
 
   &:after {
     content: 'x';
     position: absolute;
     right: 10%;
-    bottom: 37%;
+    bottom: 40%;
   }
 }
 
+.name {
+  padding-right: 70px;
+}
+
+.price {
+  color: grey;
+  text-align: right;
+}
 
 </style>
