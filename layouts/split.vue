@@ -11,7 +11,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 .wrapper {
-  background: #e1e1e3;
   min-height: 100%;
 }
 
@@ -21,6 +20,10 @@
   font-family: 'Nunito', sans-serif;
   background: #fff;
   padding: 10px 35px 10px 65px;
+}
+
+body {
+  background: #e1e1e3;
 }
 </style>
 

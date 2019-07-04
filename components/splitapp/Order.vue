@@ -4,10 +4,12 @@
       <tr v-for="food in items"
       :key="food.name">
       <td>
-        <img 
-        :src="food.picture" 
-        class="picture"
-        />
+        <div class="foodpicture">
+          <img 
+          :src="food.picture" 
+          class="picture"
+          />
+        </div>
       </td>
       <td class="quantity">
         {{ food.quantity }}
@@ -31,10 +33,16 @@
 
 <style scoped>
 
-.picture {
-  height: 50px;
+.foodpicture {
+  max-height: 50px;
   width: 80px;
-  border-radius: 5%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.picture {
+  max-width: 100%;
+  display: block;
 }
 
 .quantity {
