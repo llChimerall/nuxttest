@@ -32,8 +32,9 @@
     </template>
     <button
       v-else
+      class="addclient"
     >
-      icon
+      <span class="iconify" data-icon="ant-design:user-add-outline" data-inline="false"></span>
     </button>
   </div>
 </template>
@@ -65,6 +66,8 @@
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 30px 10px rgba(0,0,0,0.1);
+  position: relative;
+  border: 1px solid blue;
 }
 
 .client_me {
@@ -118,5 +121,15 @@
 .name, .bill {
   display: block;
   text-align: center;
+}
+
+.addclient {
+  border: 1px solid blue;
+  background: none;
+  position: absolute;
+}
+
+.iconify {
+  font-size: 2em;
 }
 </style>

@@ -31,6 +31,12 @@
         </li>
       </ul>
     </div>
+    <div class="ok">
+      <Button />
+    </div>
+    <div class="next">
+      <Button text="text"></button>
+    </div>
   </main>
 </template>
 
@@ -38,13 +44,15 @@
 import Heading from '~/components/splitapp/Heading.vue'
 import Order from '~/components/splitapp/Order.vue'
 import Client from '~/components/splitapp/Client.vue'
+import Button from '~/components/splitapp/Button.vue'
 
 export default {
   layout: 'split',
   components: {
     Heading,
     Order,
-    Client
+    Client,
+    Button
   },
 
   data: () => ({
