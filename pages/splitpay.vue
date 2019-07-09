@@ -26,14 +26,19 @@
             :me="index === 0"
           />
         </li>
-        <li class="lipeople">
-          <Client/>
-        </li>
       </ul>
+      <div class="addpeople">
+          <div class="addbutton">
+            <Client/>
+          </div>
+      </div>
+      <div class="ok">
+        <div class="hidden">
+          <Button />
+        </div>
+      </div>
     </div>
-    <div class="ok">
-      <Button />
-    </div>
+    
     <div class="next">
       <Button text="text"></button>
     </div>
@@ -106,22 +111,99 @@ export default {
         name: 'Le Pigeon Burger',
         price: 950,
       }],
-
+    },
+    {
+      avatar: 'http://placekitten.com/143/234',
+      name: 'Anna',
+      order: [{
+        picture: '/pics/food4.jpg',
+        quantity: 1,
+        name: 'Hot cheese burito',
+        price: 800,
+      },
+      {
+        picture: '/pics/food3.jpg',
+        quantity: 15,
+        name: 'Croissant',
+        price: 750,
+      }],
+    },
+    {
+      avatar: 'http://placekitten.com/143/234',
+      name: 'Stive',
+      order: [{
+        picture: '/pics/food4.jpg',
+        quantity: 1,
+        name: 'Hot cheese burito',
+        price: 800,
+      },
+      {
+        picture: '/pics/food3.jpg',
+        quantity: 15,
+        name: 'Croissant',
+        price: 750,
+      }],
     }]
   })
 }
 </script>
 
 <style>
+.people {
+  margin-right: -35px;
+  margin-left: -65px;
+  position: relative;
+}
+
 .ulpeople {
   list-style: none;
-  display: flex;
   padding: 0;
+  white-space: nowrap;
+  overflow: auto;
+  padding: 20px 140px 20px 65px;
 }
 
 .lipeople {
-  width: 25%;
-  margin: 0 10px;
+  width: 120px;
+  margin: 0 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.lipeople:first-child {
+  margin-left: 0;
+  }
+
+.addpeople {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 110px;
+  padding-top: 20px;
+  overflow: hidden;
+  background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 54%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 54%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+
+}
+
+.addbutton {
+  width: 100px;
+  margin-left: auto;
+  margin-right: -10px;
+}
+
+.ok {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.hidden {
+  margin-right: -10px;
 }
 </style>
 

@@ -66,7 +66,6 @@
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 30px 10px rgba(0,0,0,0.1);
-  border: 1px solid blue;
 }
 
 .client_me {
@@ -123,7 +122,7 @@
 }
 
 .addclient {
-  border: 1px solid blue;
+  border: none;
   background: none;
 }
 

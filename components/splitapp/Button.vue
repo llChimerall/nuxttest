@@ -3,9 +3,9 @@
       class="button"
       :class="{button_text: text}"
       >
+      {{ text }}
       <span 
-      class="iconify" 
-      :class="{button_text: text}" 
+      class="iconify"
       data-icon="ant-design:check-outline" 
       data-inline="false">
       </span>
