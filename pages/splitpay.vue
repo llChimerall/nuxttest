@@ -199,11 +199,11 @@ export default {
   position: absolute;
   bottom: 0;
   right: 0;
-  overflow: hidden;
+  width: 90px;
 }
 
 .hidden {
-  margin-right: -10px;
+  overflow: hidden;
 }
 </style>
 

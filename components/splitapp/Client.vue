@@ -65,7 +65,7 @@
   background: #fff;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 0 30px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
 }
 
 .client_me {

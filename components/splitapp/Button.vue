@@ -28,7 +28,6 @@ export default {
 }
 
 .button_text {
-  padding-left: 100px;
-  padding-right: 100px;
+  width: 100%;
 }
 </style>
